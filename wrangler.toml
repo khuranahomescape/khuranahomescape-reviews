@@ -1,0 +1,15 @@
+name = "khuranahomescape-reviews"
+main = "src/worker.js"
+compatibility_date = "2025-01-01"
+
+[assets]
+directory = "./public"
+binding = "ASSETS"
+run_worker_first = true
+
+[vars]
+MODERATOR_EMAIL = "khuranahomescape@gmail.com"
+
+[[kv_namespaces]]
+binding = "REVIEWS"
+id = "a36fad8e7efd49a6956d237418eea488"
