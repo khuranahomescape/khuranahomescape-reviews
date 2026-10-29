@@ -3,7 +3,7 @@
   var list=document.getElementById('list');
   fetch('/api/reviews').then(function(r){return r.json()}).then(function(d){
     if(!d.reviews||!d.reviews.length){
-      list.innerHTML='<p class="empty">No reviews have been published yet. If you have dealt with Khurana Homescape, please share your experience below. Reviews appear here only after moderation.</p>';return;}
+      list.innerHTML='<p class="empty">No reviews have been published yet. If you have dealt with Khurana Homescapes, please share your experience below. Reviews appear here only after moderation.</p>';return;}
     list.innerHTML=d.reviews.map(function(r){
       var meta=[esc(r.name||'Anonymous')];
       if(r.area)meta.push(esc(r.area));
